@@ -31,7 +31,12 @@
 
     <div class="container">
       <div style="padding: 80px 0 0 0" class="starter-template" ng-controller="mainController">
-        <h1>Hello {{ name + '! How are you?'}}</h1>
+        <div>
+            <label> What is your Twitter Handle?</label>
+            <input type="text" ng-model="handle"/>
+            <hr />
+            <h1>twitter.com/{{ lowercasehandle() }}</h1>
+        </div>
       <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.5/angular.js"></script>
       <script src="https://code.angularjs.org/1.7.5/angular-messages.min.js"></script>
       <script src="https://code.angularjs.org/1.7.5/angular-resource.min.js"></script>
