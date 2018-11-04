@@ -1,15 +1,10 @@
 var myApp = angular.module('myApp', []);
 
-myApp.controller('mainController', ($scope, $log) => {
-    $log.log("Hello");
-    $log.info("Info");
-    $log.warn("Warning!");
-    $log.debug("Some debug information while writing code");
-    $log.error("Error = () => err");
+myApp.controller('mainController', ($scope, $log, $filter) => {
+   $scope.name = 'Raissa';
+   $scope.formattedname = $filter('uppercase')($scope.name)
+
+   $log.info($scope.name);
+   $log.info($scope.formattedname);
+
 });
-
-
-const searchEmployee = (firstName, lastName, height, age, occupation) => 'Raissa H.'
-
-
-console.log(angular.injector().annotate(searchEmployee));
