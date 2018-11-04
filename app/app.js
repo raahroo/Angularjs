@@ -1,4 +1,4 @@
-var myApp = angular.module('myApp', []);
+var myApp = angular.module('myApp', ['ngMessages']);
 
 myApp.controller('mainController', ($scope, $log, $filter) => {
    $scope.name = 'Raissa';
