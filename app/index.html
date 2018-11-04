@@ -31,15 +31,10 @@
 
     <div class="container">
       <div style="padding: 80px 0 0 0" class="starter-template" ng-controller="mainController">
-        <form name="myForm">
-            <input type="text" ng-model="field" name="myField" required minlength="5">
-            <div ng-messages="myForm.myField.$error">
-                <div class= "alert alert-danger" ng-message="required">You did not enter a field</div>
-                <div ng-message="minlength">The value entered is too short</div>
-            </div>
-        </form>
+        
       <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.5/angular.js"></script>
       <script src="https://code.angularjs.org/1.7.5/angular-messages.min.js"></script>
+      <script src="https://code.angularjs.org/1.7.5/angular-resource.min.js"></script>
       <script src="app.js"></script>
 </body>
 </html>
